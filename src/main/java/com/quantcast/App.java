@@ -15,11 +15,6 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Level;
 
-/**
- * Hello world!
- *
- */
-//@Slf4j
 public class App
 {
 
@@ -27,7 +22,6 @@ public class App
     public static final String INPUT_DATE_PARAMETER = "inputDate";
     public static final DateTimeFormatter DEFAULT_DATE_FORMATTER = DateTimeFormatter.ISO_INSTANT;
     public static final String COMMA_DELIMITER = ",";
-//    public static final Logger log = org.slf4j.LoggerFactory.getLogger();
     public static final java.util.logging.Logger log =
             java.util.logging.Logger.getLogger(App.class.getName());
 
@@ -85,7 +79,7 @@ public class App
 
         CommandLineParser parser = new DefaultParser();
         HelpFormatter formatter = new HelpFormatter();
-        CommandLine cmd = null;//not a good practice, it serves it purpose
+        CommandLine cmd = null;
 
         try {
             cmd = parser.parse(options, args);
